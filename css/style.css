@@ -1,0 +1,108 @@
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal */
+.container {
+  width: 60%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+h2 {
+  border-bottom: 2px solid #0078d7;
+  padding-bottom: 5px;
+  margin-top: 25px;
+  color: #0078d7;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Inputs e textareas gerais */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Textareas maiores */
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Primeiros campos de Formação e Experiência (antes de clicar +) */
+#formacoes .form-item input,
+#experiencias .exp-item input {
+  min-height: 80px; /* maior altura inicial */
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #0078d7;
+  background-color: #f0f8ff;
+}
+
+/* Campos adicionados dinamicamente pelo botão + */
+.form-item input,
+.exp-item input {
+  min-height: 200px; 
+  font-size: 100px;
+  padding: 100px;
+  border: 20px solid #FF0000;
+  background-color: #FF0000;
+}
+
+/* Botão de envio e + */
+button {
+  margin-top: 20px;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #0078d7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+/* Listas no currículo */
+ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Espaçamento entre campos dinâmicos */
+.form-item, .exp-item {
+  margin-bottom: 15px;
+}
